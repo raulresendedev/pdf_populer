@@ -43,6 +43,7 @@ if op == "S":
             linha.pop(1)
             linha.pop(1)
             linha.insert(1, endereco)
+            linha[3] = str(linha[3])
             gerarPdf(linha, nome)
         linha.clear()
 else:
